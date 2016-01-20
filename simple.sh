@@ -88,4 +88,7 @@ c0(){
 	exit
 }
 
-Main
+chmod +rx trav.sh
+chmod +rx gui.sh
+command -v dialog >/dev/null 2>&1 || { Main; }
+sh gui.sh
